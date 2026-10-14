@@ -24,3 +24,13 @@ nav a:hover { color:#fff; }
 .points { padding-left:20px; font-size:1.1rem; }
 .contact { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:32px; }
 footer { background:var(--dark); color:#9aa1ab; padding:24px 0; text-align:center; }
+nav a[aria-current="page"] { color:#fff; font-weight:700; }
+.notice { display:inline-block; margin:0 0 16px; padding:4px 12px; border:1px solid #9aa1ab; border-radius:999px; font-size:.9rem; color:#d5d8dd; }
+.btn-ghost { background:transparent; border:2px solid #fff; padding:10px 22px; margin-left:8px; }
+.narrow { max-width: 760px; }
+.page-title { background: linear-gradient(135deg, #15171a, #2b2f36); color:#fff; padding:48px 0; }
+.page-title h1 { margin:0 0 8px; font-size: clamp(1.9rem, 5vw, 2.8rem); }
+.page-title .lead { margin-bottom:0; }
+footer p { margin:4px 0; }
+footer a { color:#d5d8dd; }
+@media (max-width: 640px) { .bar { height:auto; flex-wrap:wrap; padding-top:10px; padding-bottom:10px; } nav a { margin:0 14px 0 0; display:inline-block; } .btn-ghost { margin:12px 0 0; } }
