@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JT's Automotive | Same-Day Auto Repair</title>
+  <meta name="description" content="JT's Automotive offers same-day, in-and-out repair for daily drivers, plus general maintenance.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top">JT's Automotive</a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why JT's</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <h1>In and out. Same day.</h1>
+        <p class="lead">Honest repair for your daily driver, and the maintenance that keeps it on the road.</p>
+        <a class="btn" href="#contact">Get a quote</a>
+      </div>
+    </section>
+
+    <section id="services" class="wrap section">
+      <h2>Services</h2>
+      <div class="cards">
+        <article>
+          <h3>Same-Day Repair</h3>
+          <p>Drop it off in the morning, drive it home the same day. We focus on the repairs that get you back to your routine.</p>
+        </article>
+        <article>
+          <h3>Daily Driver Auto Repair</h3>
+          <p>Brakes, suspension, starting and charging, check-engine diagnostics, and more for the car you rely on.</p>
+        </article>
+        <article>
+          <h3>General Maintenance</h3>
+          <p>Oil changes, fluids, filters, tires, inspections, and scheduled service to prevent bigger problems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="band">
+      <div class="wrap section">
+        <h2>Why JT's</h2>
+        <ul class="points">
+          <li>Quick turnaround, no multi-day waits</li>
+          <li>Clear explanations and upfront pricing</li>
+          <li>Focused on everyday vehicles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div>
+          <p><strong>Phone:</strong> <a href="tel:+10000000000">(000) 000-0000</a></p>
+          <p><strong>Address:</strong> 123 Main St, Your City, ST 00000</p>
+          <p><strong>Hours:</strong> Mon&ndash;Fri 8am&ndash;5pm</p>
+        </div>
+        <!-- TODO: replace with a real form endpoint (Formspree, Web3Forms, or Cloudflare Pages Functions) -->
+        <form action="#" method="post">
+          <label>Name <input name="name" required></label>
+          <label>Phone or email <input name="contact" required></label>
+          <label>What's going on with your vehicle? <textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; <span id="y"></span> JT's Automotive</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
