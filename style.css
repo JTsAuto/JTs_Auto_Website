@@ -35,4 +35,34 @@ nav a[aria-current="page"] { color:#fff; font-weight:700; }
 .contact iframe { display:block; width:100%; max-width:400px; aspect-ratio:1; height:auto; border-radius:8px; margin-bottom:20px; }
 footer p { margin:4px 0; }
 footer a { color:var(--accent); }
-@media (max-width: 640px) { .bar { height:auto; flex-wrap:wrap; padding-top:10px; padding-bottom:10px; } nav a { margin:0 14px 0 0; display:inline-block; } .btn-ghost { margin:12px 0 0; } }
+html { -webkit-text-size-adjust:100%; }
+.menu-btn { display:none; }
+img, iframe { max-width:100%; }
+@media (max-width: 640px) {
+  .bar { height:auto; flex-wrap:wrap; padding-top:10px; padding-bottom:10px; }
+  .brand { font-size:1.3rem; }
+  .menu-btn { display:flex; flex-direction:column; justify-content:center; gap:5px; width:44px; height:44px; padding:0 10px; background:var(--accent); border:0; border-radius:6px; cursor:pointer; }
+  .menu-btn span { display:block; height:3px; background:#111; border-radius:2px; transition:transform .2s, opacity .2s; }
+  .menu-btn[aria-expanded="true"] span:nth-child(1) { transform:translateY(8px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span:nth-child(2) { opacity:0; }
+  .menu-btn[aria-expanded="true"] span:nth-child(3) { transform:translateY(-8px) rotate(-45deg); }
+  nav { display:flex; flex-direction:column; width:100%; padding-top:8px; }
+  .js nav { display:none; }
+  .js nav.open { display:flex; }
+  nav a { margin:0; padding:12px 0; font-size:1.15rem; border-top:1px solid #2a2a2a; }
+  .section { padding-top:32px; padding-bottom:32px; }
+  .hero { padding:40px 0 48px; }
+  .hero h1 { font-size:2rem; }
+  .lead { font-size:1.05rem; margin-bottom:20px; }
+  .notice { font-size:.8rem; }
+  .page-title { padding:28px 0; }
+  .btn { display:block; text-align:center; padding:14px 20px; }
+  .btn + .btn { margin-top:12px; }
+  .btn-ghost { margin:12px 0 0; }
+  .cards { gap:14px; }
+  .cards article { padding:18px; }
+  .points { font-size:1rem; }
+  .contact { gap:24px; }
+  .contact iframe { max-width:none; }
+  footer { padding:20px 0; }
+}
